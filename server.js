@@ -27,6 +27,8 @@ const db= mongoose.connection;
 db.on('error', error=>console.error(error));
 db.once('open', ()=>console.log('connected to mongoose.'));
 
+console.log("adarsh is learning many new things..")
+
 app.listen(process.env.PORT|| 3000, ()=>{
     console.log("hey there...")
 })
