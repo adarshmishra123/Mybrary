@@ -1,0 +1,17 @@
+////////////// setUp..
+     1. npm init -y
+     2. npm i express ejs express-ejs-layouts    //layout.. every singe file has to be put inside the layout file so the duplicasy of header and footer type thins is removed..
+     3. npm i --save--dev nodemon 
+
+     4. make all required folder.. models/public/routes/views/.env 
+     5. set all the middlewares of views/layouts/routes
+
+     the structure of the project is done ..
+
+     6. connect it from mongodb using mongoose.
+     7. push on git..
+                        git --> version control system , different people can work on different different features, 
+                            --> mainly stores the history of changes and achieves a lot of good things,
+
+                            git commands- git init, git ls, git status,  
+                            staging area - where you hold the changes before committing. working directory->staging area(git add)->commited (git commit -m "message")
