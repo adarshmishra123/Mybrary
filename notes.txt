@@ -15,3 +15,7 @@
 
                             git commands- git init, git ls, git status,  
                             staging area - where you hold the changes before committing. working directory->staging area(git add)->commited (git commit -m "message")
+     8. deploy on heroku.
+     9. connect db with cloud (atlas).
+
+          // partials --> part of the rendering pages used to reduce the copy pasting of code have some different syntak for including in other files..
