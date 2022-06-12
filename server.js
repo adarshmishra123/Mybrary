@@ -19,6 +19,7 @@ app.use(express.urlencoded({limit: '10mb', extended: false}));
 app.use(express.json());
 app.use('/', require('./routes/index'))
 app.use('/authors', require('./routes/authors'))
+app.use('/books', require('./routes/books'))
 // app.use('/authors', require('./routes/authors'))
 
 
@@ -36,6 +37,6 @@ db.once('open', ()=>console.log('connected to mongoose.'));
 
 console.log("adarsh is learning many new things..")
 
-app.listen(process.env.PORT|| 3000, ()=>{
+app.listen(process.env.PORT|| 4000, ()=>{
     console.log("hey there...")
 })

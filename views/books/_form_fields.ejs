@@ -1,0 +1,39 @@
+<label >Title</label>
+<input type="text" name="title" value= "<%= book.title%>">
+
+
+<!-- <% authors %>      -->
+<!-- we don't want to use asynchronous programminig in here so we will use just variables here passed by the server .. -->
+
+
+<label >Author</label>
+<select name="author" >
+    
+    <% locals.authors.forEach(author =>{ %>
+        <% if(author.id === book.author) {%>
+            <option selected label="<%= author.name %> " value="<%= author.id %>"></option>
+        <% }else{ %>
+            <option  label="<%= author.name %> " value="<%= author.id %>"></option>
+       <% } %>
+    <% }) %>
+</select>
+
+<label >Publish Date</label>
+<input type="date" name="publishDate" 
+       value= "<%= book.publishDate == null ? '': book.publishDate.toISOString().split('T')[0] %>">      
+       <!-- 2019-01-19T12:50 -->
+
+<div>
+    <label >Page Count</label>
+<input type="number" name="pageCount" min="1" value= "<%= book.pageCount%>">
+</div>
+
+<div>
+    <label >Cover</label>
+    <input type="file" name="cover" >
+    <!-- it doesn't have any value as ot doesn't support any default value.. -->
+</div>
+<div>
+    <label >Description</label>
+    <textarea name="description"><%=book.description%></textarea>
+</div>
